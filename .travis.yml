@@ -10,7 +10,6 @@ cache:
     - node_modules
     - theme
 before_install:
-  #  配置git
   - git config --global user.name "caijunxing"
   - git config --global user.email "1549758237@qq.com"
   # 由于使用了yarn，所以需要下载，如不用yarn这两行可以删除
@@ -37,6 +36,6 @@ install:
   # 不用yarn的话这里改成 npm i 即可
   - yarn
 script:
-  - hexo clean --config source/_data/matery.yml
-  - hexo g --config source/_data/matery.yml
-  - hexo d --config source/_data/matery.yml
+  - hexo clean
+  - hexo g
+  - hexo d
